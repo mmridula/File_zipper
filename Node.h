@@ -3,7 +3,7 @@
 
 class Node
 {
-    char charcter;
+    char character;
     int frequency;
 
 public:
@@ -14,10 +14,17 @@ private:
 
 public:
     Node(char character, int frequency);
+    Node(char character);
 
     Node *getLeft() const;
 
     Node *getRight() const;
+
+    void setLeft(Node *left);
+
+    void setRight(Node *right);
+
+    char getCharacter() const;
 };
 
 #endif // HUFFMANCODING_NODE_H

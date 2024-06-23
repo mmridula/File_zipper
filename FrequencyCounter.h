@@ -1,8 +1,3 @@
-/*
- *
- * FrequencyCounter module is to read input file and count frequency for each character.
- *
- */
 #include <string.h>
 #include <iostream>
 #include <unordered_map>
@@ -14,10 +9,10 @@ using namespace std;
 class FrequencyCounter
 {
     unordered_map<char, int> frequencyMap;
-    void readFile(string fileName);
 
 public:
     const unordered_map<char, int> &getFrequencyMap() const;
+    void readFile(string fileName);
 };
 
 #endif /*FREQUENCY_COUNTER_H_*/
